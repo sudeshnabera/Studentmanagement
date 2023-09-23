@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+nav{
+    position: fixed;
+    background-color: aqua;
+    height: 70px;
+    width: 100%;
+    z-index: 1;
+
+}
+.logo{
+font-size: 25px;
+position: relative;
+left: 5%;
+color: white;
+font-weight: bold;
+line-height: 70px;
+}
+
+ul{
+    position: relative;
+    float: right;
+    margin-right: 20px;
+}
+li{
+    display: inline-block;
+    line-height: 70px;
+    margin: 0 5px;
+}
+a{
+    text-decoration:none;
+    font-size: 20px;
+    color: white;
+}
+.main_img{
+    width: 100%;
+    height: 300px;
+}
+.section1{
+    padding-top: 70px;
+}
+.img_text{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    color: white;
+    background-color: rgb(71, 71, 202);
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 35px;
+
+}
+
+.welcome_img{
+    width: 100%;
+    height: 250px;
+}
+.container{
+    padding-top: 70px;
+}
+.teacher{
+    width: 90%;
+    height: 200px;
+
+}
+ /* .label_text{
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+    padding-right: 10px;
+} */
+.admission_form {
+    text-align: center;
+}
+.label_text {
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+    padding-right: 10px;
+}
+.input_deg{
+    width: 30%;
+    height: 40px;
+    border-radius: 25px;
+    border: 1px solid blue;
+}
+.adm_int{
+    padding-top: 10px;
+}
+.input_txt{
+    width: 30%;
+    height: 120px;
+    border-radius: 25px;
+    border: 1px solid blue;
+}
+#submit{
+    position: relative;
+    width: 15%;
+    left: 5%;
+}
+
+footer{
+    background-color: black;
+    height: 70px;
+    width: 100%;
+}
+.footer_txt{
+    text-align: center;
+    color: white;
+    top: 20%;
+    position: relative;
+}
+.adm{
+    padding-top: 30px;
+    
+}
+.adm_form{
+    
+    padding-bottom: 30px;
+}
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    font-weight: bold;
+}
+.form-control {
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    padding: 10px;
+}
+.btn-primary {
+    background-color: #3498db;
+    border: none;
+    width: 100%;
+}
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+.body_deg{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.home:hover{
+    color: skyblue;
+}
