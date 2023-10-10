@@ -93,15 +93,15 @@ class DB {
 }
 
 // Usage:
-$db = new DB("localhost", "username", "password", "database_name");
-if ($db->connect()) {
-    // Example queries:
-    $result = $db->fetch("SELECT * FROM users WHERE id = :id", ["id" => 1]);
-    $results = $db->fetchAll("SELECT * FROM products");
-    $newUserId = $db->insert("users", ["username" => "newuser", "email" => "newuser@example.com"]);
-    $updatedRows = $db->update("users", ["username" => "updateduser"], "id = :id", ["id" => 2]);
-    $deletedRows = $db->delete("users", "id = :id", ["id" => 3]);
+// $db = new DB("localhost", "username", "password", "database_name");
+// if ($db->connect()) {
+//     // Example queries:
+//     $result = $db->fetch("SELECT * FROM users WHERE id = :id", ["id" => 1]);
+//     $results = $db->fetchAll("SELECT * FROM products");
+//     $newUserId = $db->insert("users", ["username" => "newuser", "email" => "newuser@example.com"]);
+//     $updatedRows = $db->update("users", ["username" => "updateduser"], "id = :id", ["id" => 2]);
+//     $deletedRows = $db->delete("users", "id = :id", ["id" => 3]);
 
-    $db->disconnect();
-}
+//     $db->disconnect();
+// }
 ?>

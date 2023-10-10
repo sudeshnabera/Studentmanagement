@@ -1,4 +1,19 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "schoolproject";
 
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+$sql="SELECT * FROM teacher";
+$result=mysqli_query($conn,$sql);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,21 +60,22 @@
     <div class="container">
         <div class="row">
 
-            <div class="col-md-4">
-                <img class="teacher" src="teacher1.jpg">
-                <p>A teacher is a person who does the work of teaching. The teacher performs the teaching-learning process with ease and expertise. The teacher enlightens us on our path to move towards achieving the completion. The first role model of children outside their family is their teacher. Teachers need to be virtuous.</p>
-            </div>
+            <?php
 
-            <div class="col-md-4">
-                <img class="teacher" src="teacher2.jpg">
-                <p>A teacher is a person who does the work of teaching. The teacher performs the teaching-learning process with ease and expertise. The teacher enlightens us on our path to move towards achieving the completion. The first role model of children outside their family is their teacher. Teachers need to be virtuous.</p>
-            </div>
+                while($info=$result->fetch_assoc())
+                {
 
+                
+            ?>
             <div class="col-md-4">
-                <img class="teacher" src="teacher3.jpg">
-                <p>A teacher is a person who does the work of teaching. The teacher performs the teaching-learning process with ease and expertise. The teacher enlightens us on our path to move towards achieving the completion. The first role model of children outside their family is their teacher. Teachers need to be virtuous.</p>
+                <img class="teacher" src="<?php echo "{$info['name']}" ?>">
+                <h3><?php echo "{$info['name']}" ?></h3>
+                <h5><?php echo "{$info['description']}" ?></h5>
             </div>
-
+        <?php
+            }
+        ?>
+            
         </div>
 
     </div>
